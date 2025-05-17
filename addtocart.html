@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecom website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+<body>
+    <!-- start header section -->
+    <header class="section-navbar">
+      <section class="top-txt">
+        <div class="head container">
+          <div class="head_txt">
+            <p>Free shipping, 30 day return  or refund guarantee.</p>
+          </div>
+          <div class="sign_in_up">
+            <a href="#">SIGN IN</a>
+            <a href="#">SIGN UP</a>
+          </div>
+        </div>
+      </section>
+  
+      <div class="container flex">
+        <div class="navbar-brand">
+          <a href="index.html"><span class="thapa">thapa</span> <span class="store">store</span></a>
+        </div>
+        <nav>
+          <ul>
+            <li class="nav-item"><a href="/" class="nav-link">home</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">about</a></li>
+            <li class="nav-item"><a href="product.html" class="nav-link">products</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">contact</a></li>
+            <li class="nav-item"><a href="addtocart.html" class="nav-link add-to-cart-button" id="cartValue"><i class="fa-solid fa-cart-shopping"> &nbsp; 0</i></a></li>
+          </ul>
+      </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+
+
+
+    <section class="addToCartElement">
+      <div class="container">
+        <section>
+          <div id="productsCartContainer"></div>
+        </section>
+
+          <!-- start Template code -->
+
+  
+
+  <!-- end Template code -->
+  
+        <section class="productCartTotalElem">
+          <div class="productCartTotalElement">
+            <p>Select Offer Summery</p>
+            <div class="productOrderTotal">
+              <div class="div">
+                <p>Sub Total : </p>
+                <p class="productSubTotal">0</p>
+              </div>
+              <div class="div">
+                <p>Tax:</p>
+                <p class="productTax">₹50</p>
+              </div>
+              <hr>
+              <div class="div">
+                <p>Final Total:</p>
+                <p class="productFinalTotal">₹0</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+    
+
+
+    <template id="productCartTemplate">
+      <div class="cards" id="cardValue">
+        <article class="information [card]">
+          <div>
+            <span class="category"></span>
+          </div>
+          <div class="imageContainer">
+            <img class="productImage" src="" alt="">
+          </div>
+  
+          <h2 class="productName"></h2>
+  
+            <p class="productPrice"></p>
+  
+
+            <div class="stockElement">
+              <button class="cartIncrement">+</button>
+              <p class="productQuantity">1</p>
+              <button class="cartDecrement">-</button>
+            </div>
+
+            <button class="add-to-cart-button remove-to-cart-button">Remove</button>
+            
+        </article>
+      </div>
+    </template>
+      <!-- start footer code -->
+
+  <footer class="section-footer">
+    <div class="footer-container container">
+      <div class="content-1">
+        <a href="index.html"><img src="/public/images/logo.png" alt="thapa store"></a>
+        <p>Welcome to Thapa EcomStore, your ultimate designation for cutting-edge gadgets!</p>
+      </div>
+    </div>
+    <div class="container grid grid-four--cols">
+      <div class="footer-1--div">
+
+      <div class="social-footer--icons">
+        <a href="https://discord.gg/fDuFEXfyyH" target="_blank"><i class="fa-brands fa-discord"></i></a>
+        <a href="https://www.youtube.com/thapatechnical" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://www.instagram.com/thapatechnical" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+      </div>
+
+      <div class="footer-2--div">
+        <p class="footer-subheading">Courses</p>
+        <ul>
+          <li><a href="index.html">home</a></li>
+          <li><a href="index.html">home</a></li>
+          <li><a href="index.html">home</a></li>
+          <li><a href="index.html">home</a></li>
+          <li><a href="index.html">home</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-3--div">
+        <p class="footer-subheading">Links</p>
+        <ul>
+          <li><a href="index.html">link</a></li>
+          <li><a href="index.html">link</a></li>
+          <li><a href="index.html">link</a></li>
+          <li><a href="index.html">link</a></li>
+          <li><a href="index.html">link</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-4--div">
+        <p class="footer-subheading">Blogs</p>
+        <ul>
+          <li><a href="index.html">Html</a></li>
+          <li><a href="index.html">Html</a></li>
+          <li><a href="index.html">Html</a></li>
+          <li><a href="index.html">Html</a></li>
+          <li><a href="index.html">Html</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- end footer code -->
+</body>
+
+<script type="module" src="showAddToCartCards.js"></script>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecom website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+<body>
+
+    <!-- start header section -->
+    <header class="section-navbar">
+      <section class="top-txt">
+        <div class="head container">
+          <div class="head_txt">
+            <p>Free shipping, 30 day return  or refund guarantee.</p>
+          </div>
+          <div class="sign_in_up">
+            <a href="#">SIGN IN</a>
+            <a href="#">SIGN UP</a>
+          </div>
+        </div>
+      </section>
+  
+      <div class="container flex">
+        <div class="navbar-brand">
+          <a href="index.html"><span class="thapa">thapa</span> <span class="store">store</span></a>
+        </div>
+        <nav>
+          <ul>
+            <li class="nav-item"><a href="/" class="nav-link">home</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">about</a></li>
+            <li class="nav-item"><a href="product.html" class="nav-link">products</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">contact</a></li>
+            <li class="nav-item"><a href="addtocart.html" class="nav-link add-to-cart-button" id="cartValue"><i class="fa-solid fa-cart-shopping"> &nbsp; 0</i></a></li>
+          </ul>
+      </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+
+
+    <!-- start blog section -->
+
+    <section class="section-contact">
+      <div class="container">
+        <h2 class="section-common-heading">Contact Us</h2>
+        <p class="section-common-subheading">Get in contact with usWe are always here to help you</p>
+      </div>      
+
+      <div class="container grid grid-two--cols shadow">
+        <div class="contact-content">
+          <form action="https://formspree.io/f/xyyqbjej" method="POST">
+            <div class="grid grid-two--cols">
+              <div>
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" placeholder="enter your name" required autocomplete="off">
+              </div>
+              
+              <div>
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" placeholder="abc@test.com" required autocomplete="off">
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="subject">Subject</label>
+              <input type="text" name="subject" id="subject" placeholder="your main title">
+            </div>
+
+            <div class="mb-3">
+              <label for="message" class="label">Message</label>
+              <textarea name="message" id="message" raw="10" cols="30" placeholder="enter your message"></textarea>
+            </div>
+
+            <div>
+              <button class="btn btn-submit">send message</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="contact-map">
+          <figure>
+            <img src="/public/images/ecompost.png" alt="">
+          </figure>
+        </div>
+      </div>
+    </section>
+     
+    <!-- end blog section -->
+     
+
+        <!-- start footer section -->
+        <footer class="section-footer">
+          <div class="footer-container container">
+            <div class="content-1">
+              <a href="index.html"><img src="/public/images/logo.png" alt="thapa store"></a>
+              <p>Welcome to Thapa EcomStore, your ultimate designation for cutting-edge gadgets!</p>
+            </div>
+          </div>
+          <div class="container grid grid-four--cols">
+            <div class="footer-1--div">
+      
+            <div class="social-footer--icons">
+              <a href="https://discord.gg/fDuFEXfyyH" target="_blank"><i class="fa-brands fa-discord"></i></a>
+              <a href="https://www.youtube.com/thapatechnical" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+              <a href="https://www.instagram.com/thapatechnical" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            </div>
+      
+            <div class="footer-2--div">
+              <p class="footer-subheading">Courses</p>
+              <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="index.html">home</a></li>
+                <li><a href="index.html">home</a></li>
+                <li><a href="index.html">home</a></li>
+                <li><a href="index.html">home</a></li>
+              </ul>
+            </div>
+      
+            <div class="footer-3--div">
+              <p class="footer-subheading">Links</p>
+              <ul>
+                <li><a href="index.html">link</a></li>
+                <li><a href="index.html">link</a></li>
+                <li><a href="index.html">link</a></li>
+                <li><a href="index.html">link</a></li>
+                <li><a href="index.html">link</a></li>
+              </ul>
+            </div>
+      
+            <div class="footer-4--div">
+              <p class="footer-subheading">Blogs</p>
+              <ul>
+                <li><a href="index.html">Html</a></li>
+                <li><a href="index.html">Html</a></li>
+                <li><a href="index.html">Html</a></li>
+                <li><a href="index.html">Html</a></li>
+                <li><a href="index.html">Html</a></li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+        <!-- end footer section -->
+
+        
+        <script type="module" src="main.js"></script>
+
+</body>
+</html>
